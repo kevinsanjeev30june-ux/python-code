@@ -51,3 +51,9 @@ my_list2.sort()
 
 print(f"minimum : {my_list2[0]}")
 print(f"maximum : {my_list2[-1]}")
+
+
+# Slicing a list
+print(my_list2[:3]) # first 3 items
+print(my_list2[3:]) # all items except first 3
+print(my_list2[2:4]) # items from index 2 to 4

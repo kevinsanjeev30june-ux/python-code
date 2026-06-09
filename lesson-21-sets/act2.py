@@ -18,3 +18,8 @@ print(setA.isdisjoint(setC))
 a,*b = set1
 print(a)
 print(b)
+
+# set comphrehension
+numbers = [1, 2, 2, 3, 4, 4, 4, 5]
+unique_squares = {x**2 for x in numbers}
+print(unique_squares)

@@ -30,20 +30,19 @@ def display():
     text_box.insert(END, greet)
     text_box.insert(END, message)
     text_box.insert(END, date.today())
+# Add a text widget to display the message
+text_box = Text(height=3)
 
-    # Add a text widget to display the message
-    text_box = Text(height=3)
+# Add a button and give value of command as name of the function 
+# Press the button display function will be called automatically
+btn = Button(text="Begin", command=display, height=2, bg="#072F5F", fg="white")
 
-    # Add a button and give value of command as name of the function 
-    # Press the button display function will be called automatically
-    btn = Button(text="Begin", command=display, height=2, bg="#072F5F", fg="white")
+# Organize the widgets in the window
+lbl.pack()
+name_lbl.pack()
+name_entry.pack()
+btn.pack()
+text_box.pack()
 
-    # Organize the widgets in the window
-    lbl.pack()
-    name_lbl.pack()
-    name_entry.pack()
-    btn.pack()
-    text_box.pack()
-
-    # start the Gui event loop
-    root.mainloop()
+# start the Gui event loop
+root.mainloop()

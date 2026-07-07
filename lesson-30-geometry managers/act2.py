@@ -7,7 +7,7 @@ root.title("LOGIN APP")
 root.geometry("400x400")
 
 # Create a frame to organize elements better
-frame = Frame(master=root, height=500, width=400 bg='#01124e')
+frame = Frame(master=root, height=500, width=400 ,bg='#01124e')
 
 # add widgets
 # add a label
@@ -31,3 +31,19 @@ def display():
 # Text box to display the message    
 text_box = Text(bg='#de004b' , fg='blue')
 
+# Add a button ,when pressed the message will be displayed
+btn = Button(text="create account", command=display , bg="red")
+
+# Arrange all the widgets 
+frame.place(x=20, y=0)
+lbl1.place(x=20, y=20)
+name_entry.place(x=150, y=20)
+lbl2.place(x=20, y=80)
+email_entry.place(x=150, y=80)
+lbl3.place(x=20, y=140)
+password_entry.place(x=150, y=140)
+btn.place(x=150, y=200)
+text_box.place(y=250)
+
+# start the main loop
+root.mainloop()
